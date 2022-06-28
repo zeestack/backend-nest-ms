@@ -26,48 +26,22 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Project Scope
+
+This project demonstrates the concept of distributed Microservices with Rabbit MQ and TCP as its communication infrastructure. This project consists of three microservices. ApiGateway, Products and Orders. 
+
+ApiGateway includes basic authentication and authorization. HttpRequest from Client flows only through ApiGateway while interservices communication is done through Rabbit MQ with Products and TCP with Orders Microservices.
+
 ## Installation
 
 ```bash
 $ npm install
 ```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Zeestack]
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is MIT license.
