@@ -22,11 +22,8 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Project Scope
+## Project Scope (Microservices / RabbitMQ and Nest Workspaces)
 
 This project demonstrates the concept of distributed Microservices with Rabbit MQ and TCP as its communication infrastructure. This project consists of three microservices. ApiGateway, Products and Orders. 
 
