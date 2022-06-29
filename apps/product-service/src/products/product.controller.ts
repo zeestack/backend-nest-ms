@@ -2,6 +2,7 @@ import {
   Body,
   ClassSerializerInterceptor,
   Controller,
+  Get,
   Post,
   UseInterceptors,
 } from '@nestjs/common';
@@ -21,6 +22,7 @@ export class ProductController {
     return this.productService.create(product);
   }
 
+  @Get()
   @MessagePattern({ cmd: 'getAllProducts' })
   async getAllProducts(): Promise<ProductDto[]> {
     return this.productService.getAllProducts();

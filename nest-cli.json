@@ -62,6 +62,24 @@
       "compilerOptions": {
         "tsConfigPath": "apps/order-service/tsconfig.app.json"
       }
+    },
+    "dtos": {
+      "type": "library",
+      "root": "libs/dtos",
+      "entryFile": "index",
+      "sourceRoot": "libs/dtos/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/dtos/tsconfig.lib.json"
+      }
+    },
+    "email-service": {
+      "type": "application",
+      "root": "apps/email-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/email-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/email-service/tsconfig.app.json"
+      }
     }
   }
 }

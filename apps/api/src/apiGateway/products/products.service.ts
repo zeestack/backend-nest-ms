@@ -7,7 +7,7 @@ export class ProductService {
   constructor(@Inject('PRODUCTS_SRV') private productClient: ClientProxy) {}
 
   async getAllProducts() {
-    return await this.productClient.send<ProductDto[]>(
+    return await this.productClient.send(
       {
         cmd: 'getAllProducts',
       },

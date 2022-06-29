@@ -10,6 +10,10 @@ const PublicPaths = [
     method: RequestMethod.GET,
     path: '/products/all',
   },
+  {
+    method: RequestMethod.GET,
+    path: '/products/:productId',
+  },
 ];
 
 @Injectable()

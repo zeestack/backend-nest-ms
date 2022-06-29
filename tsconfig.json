@@ -42,6 +42,12 @@
       ],
       "@app/utils/*": [
         "libs/utils/src/*"
+      ],
+      "@app/dtos": [
+        "libs/dtos/src"
+      ],
+      "@app/dtos/*": [
+        "libs/dtos/src/*"
       ]
     }
   }

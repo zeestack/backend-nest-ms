@@ -11,6 +11,7 @@ export class OrderService {
     @Inject('ORDER_MODEL')
     private orderModel: Model<Order>,
     @Inject('PRODUCTS_SRV') private productClient: ClientProxy,
+    @Inject('email_service') private emailService: ClientProxy,
   ) {}
 
   async create(order: OrderDto): Promise<OrderDto> {
@@ -19,6 +20,7 @@ export class OrderService {
 
     const newOrder = new this.orderModel(order);
     const ord = mapOrderToOrderDto(await newOrder.save());
+    await this.emailService.emit({ event: 'email-service-event' }, ord);
     return ord;
   }
 

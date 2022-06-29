@@ -13,6 +13,7 @@ import { PathConfig } from '../configuration';
 @Injectable()
 export class AuthMiddlware implements NestMiddleware {
   constructor(private readonly jwtUtils: JwtUtils) {}
+
   async use(req: Request, res: Response, next: NextFunction) {
     const path = req.originalUrl;
     const action = RequestMethod[req.method];

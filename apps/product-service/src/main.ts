@@ -17,7 +17,9 @@ async function bootstrap() {
       },
     },
   });
+
   await microservice.listen();
+
   await app
     .listen(port)
     .then(() => {
